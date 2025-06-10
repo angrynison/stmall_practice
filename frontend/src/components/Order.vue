@@ -1,8 +1,8 @@
 <template>
     <div>
         <String
-            label="Customerid"
-            v-model="value.customerid"
+            label="CustomerId"
+            v-model="value.customerId"
             :editMode="editMode"
         />
         <String
