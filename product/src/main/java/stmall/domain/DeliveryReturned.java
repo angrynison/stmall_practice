@@ -10,8 +10,8 @@ import stmall.infra.AbstractEvent;
 public class DeliveryReturned extends AbstractEvent {
 
     private Long id;
-    private Long orderid;
-    private String custeomerid;
+    private Long orderId;
+    private String custeomerId;
     private String itemId;
     private Integer qty;
     private String address;

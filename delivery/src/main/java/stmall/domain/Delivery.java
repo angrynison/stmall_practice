@@ -22,9 +22,9 @@ public class Delivery {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Long orderid;
+    private Long orderId;
 
-    private String custeomerid;
+    private String custeomerId;
 
     private String itemId;
 

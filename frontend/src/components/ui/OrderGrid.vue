@@ -25,7 +25,7 @@
                     <thead>
                         <tr>
                         <th>Id</th>
-                        <th>Customerid</th>
+                        <th>CustomerId</th>
                         <th>ItemId</th>
                         <th>Qty</th>
                         <th>Address</th>
@@ -39,7 +39,7 @@
                             :style="val === selectedRow ? 'background-color: rgb(var(--v-theme-primary), 0.2) !important;':''"
                         >
                             <td class="font-semibold">{{ idx + 1 }}</td>
-                            <td class="whitespace-nowrap" label="Customerid">{{ val.customerid }}</td>
+                            <td class="whitespace-nowrap" label="CustomerId">{{ val.customerId }}</td>
                             <td class="whitespace-nowrap" label="ItemId">{{ val.itemId }}</td>
                             <td class="whitespace-nowrap" label="Qty">{{ val.qty }}</td>
                             <td class="whitespace-nowrap" label="Address">{{ val.address }}</td>
@@ -105,7 +105,7 @@
                     </v-toolbar>
                     <v-card-text>
                         <div>
-                            <String label="Customerid" v-model="selectedRow.customerid" :editMode="true"/>
+                            <String label="CustomerId" v-model="selectedRow.customerId" :editMode="true"/>
                             <String label="ItemId" v-model="selectedRow.itemId" :editMode="true"/>
                             <Number label="Qty" v-model="selectedRow.qty" :editMode="true"/>
                             <String label="Address" v-model="selectedRow.address" :editMode="true"/>
