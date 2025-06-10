@@ -7,7 +7,7 @@ import {
 
 <template>
     <ul>
-        <VerticalNavSectionTitle :item="{ heading: 'Enter' }" />
+        <VerticalNavSectionTitle :item="{ heading: 'Order' }" />
         <VerticalNavLink
             :item="{
                 title: 'Order',

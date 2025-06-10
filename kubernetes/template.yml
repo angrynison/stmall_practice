@@ -3,22 +3,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: enter
+  name: order
   labels:
-    app: enter
+    app: order
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: enter
+      app: order
   template:
     metadata:
       labels:
-        app: enter
+        app: order
     spec:
       containers:
-        - name: enter
-          image: username/enter:latest
+        - name: order
+          image: username/order:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -165,15 +165,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: enter
+  name: order
   labels:
-    app: enter
+    app: order
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: enter
+    app: order
 
 
 ---
